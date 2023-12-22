@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link,} from 'react-router-dom'
 import { useForm} from 'react-hook-form'
+import img from '../Assets/Group 1.png'
+
 function Registration() {
 
   const [Field , setField] = useState({
@@ -13,8 +15,6 @@ function Registration() {
   const {register , handleSubmit, watch, formState:{errors}} = useForm();
 
   const [Submitted,setSubmitted] = useState(false)
-  const [Validate , setValidate] = useState(false)
-
 
   const onSubmit = (data) =>{
     setField(data);
@@ -27,7 +27,7 @@ function Registration() {
      <div id="header">
         <div id="head">
             <div id="logo">
-            <img src='../Assets/Group 1.png' height='50px'/>
+            <img src={img} height='50px'/>
             </div>
             <div id="logo-name">
             <h1>Kalvium Books</h1>

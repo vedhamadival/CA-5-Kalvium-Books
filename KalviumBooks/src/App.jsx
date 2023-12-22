@@ -11,7 +11,7 @@ function App() {
     {/* <Header/> */}
     {/* <Books/> */}
     <Routes>
-      <Route path='/' element ={<Books/>}></Route>
+      <Route path='/CA-5-Kalvium-Books' element ={<Books/>}></Route>
       <Route path='/Registration' element={<Registration/>}></Route>
       <Route path='/Books' element={<Books/>}></Route>
     </Routes>

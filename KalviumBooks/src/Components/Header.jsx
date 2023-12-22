@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import {Link} from 'react-router-dom'
+import img from '../Assets/Group 1.png'
 
 //state variables from books.jsx is passed
 function Header({setSearchedData}) {
@@ -16,7 +17,7 @@ function Header({setSearchedData}) {
     <div id="header">
         <div id="head">
             <div id="logo">
-            <img src='../Assets/Group 1.png' height='50px'/>
+            <img src= {img} height='50px'/>
             </div>
             <div id="logo-name">
             <h1>Kalvium Books</h1>
